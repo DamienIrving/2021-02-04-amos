@@ -270,45 +270,22 @@ please preview your site before committing, and make sure to run
 
 <h2 id="setup">Setup</h2>
 
+<h3>Software and Data</h3>
+
 <p>
-  To participate in a
-  {% if site.carpentry == "swc" %}
-  Software Carpentry
-  {% elsif site.carpentry == "dc" %}
-  Data Carpentry
-  {% elsif site.carpentry == "lc" %}
-  Library Carpentry
-  {% endif %}
-  workshop,
-  you will need access to the software described below.
-  In addition, you will need an up-to-date web browser.
-</p>
-<p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+  Software installation instructions and links to download the workshop
+  data files can be found at <a href="https://carpentrieslab.github.io/python-aos-lesson/setup.html">https://carpentrieslab.github.io/python-aos-lesson/setup.html</a>.
 </p>
 
-{% comment %}
-For online workshops, the section below provides:
-- installation instructions for the Zoom client
-- recommendations for setting up Learners' workspace so they can follow along
-  the instructions and the videoconferencing
+<p>
+  In order to avoid delays at the beginning of the workshop,
+  we also ask that everyone follows the optional python package installation instructions at that page.
+  You should select the "default" instructions for your operating system
+  unless you already have experience using conda environments.
+</p>
 
-If you do not use Zoom for your online workshop, edit the file
-`_includes/install_instructions/videoconferencing.html`
-to include the relevant installation instructions.
-{% endcomment %}
-{% if online != "false" %}
+<p>
+  <strong>Please complete the data download and software installation prior to arriving at the workshop.</strong>
+</p>
+
 {% include install_instructions/videoconferencing.html %}
-{% endif %}
-
-{% comment %}
-These are the installation instructions for the tools used
-during the workshop.
-{% endcomment %}
-
-{% include install_instructions/shell.html %}
-{% include install_instructions/git.html %}
-{% include install_instructions/editor.html %}
-{% include install_instructions/python.html %}
