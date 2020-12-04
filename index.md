@@ -268,9 +268,7 @@ please preview your site before committing, and make sure to run
 'tools/check' as well.
 {% endcomment %}
 
-<h2 id="setup">Setup</h2>
-
-<h3>Software and Data</h3>
+<h2 id="setup">Software and Data</h2>
 
 <p>
   Software installation instructions and links to download the workshop
