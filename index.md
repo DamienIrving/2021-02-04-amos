@@ -286,4 +286,6 @@ please preview your site before committing, and make sure to run
   <strong>Please complete the data download and software installation prior to arriving at the workshop.</strong>
 </p>
 
+<hr/>
+
 {% include install_instructions/videoconferencing.html %}
