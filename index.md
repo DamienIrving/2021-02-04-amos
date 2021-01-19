@@ -17,10 +17,28 @@ instructor: ["Damien Irving", "Claire Trenham", "Holger Wolff"] # boxed, comma-s
 helper: ["Claire Carouge", "Mitchell Black", "Zeb Nicholls"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["irving.damien@gmail.com"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
-eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+eventbrite: "137505758425"          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
-<h4><a href="https://amos.eventsair.com/amos-2021/registration">Register at the AMOS 2021 conference website</a></h4>
+{% comment %}
+EVENTBRITE
+
+This block includes the Eventbrite registration widget if
+'eventbrite' has been set in the header.  You can delete it if you
+are not using Eventbrite, or leave it in, since it will not be
+displayed if the 'eventbrite' field in the header is not set.
+{% endcomment %}
+{% if page.eventbrite %}
+<strong>Some adblockers block the registration window. If you do not see the
+  registration box below, please check your adblocker settings.</strong>
+<iframe
+  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
+  frameborder="0"
+  width="100%"
+  height="280px"
+  scrolling="auto">
+</iframe>
+{% endif %}
 
 <h2 id="general">General Information</h2>
 
